@@ -1,4 +1,4 @@
-#How to install ownCloud 10 server on RHEL 7
+# How to install ownCloud 10 server on RHEL 7
 
 ownCloud is a Dropbox-like solution for self-hosted file sharing and syncing. Installing ownCloud 10 on RHEL is quite simple, however, the OwnCloud documentation does not cover it completly (it's more focused on Debian like versions) hence this document. 
 
@@ -297,6 +297,26 @@ Once the user has been added, you will be able to see the list of users (as you 
 ![](images/oc-users.png)
 
 And you will be able to log with any of them.
+
+### Port Management
+
+We could decide to run the ownCloud in another port (for instance, 8080), it's a matter of a simple line on the Apache config file, `/opt/rh/httpd24/root/etc/httpd/conf/httpd.conf`
+
+~~~~
+Listen 192.168.2.198:8080
+~~~~
+
+I have opted for this, as this machine has different network interfaces, and I just want that one IP serves http requests on the 8080 port. If you want to use "all interfaces" or you only have one interface, you can just use:
+
+~~~~
+Listen 192.168.2.198:80
+~~~~
+
+Now, you have to point your browser to `http://192.168.2.198:8080/owncloud` instead, as follows:
+
+![](images/oc-8080.png)
+
+**NOTE:** ownCloud will redirect you to the php needed page.
 
 ## Accessing with the client
 
