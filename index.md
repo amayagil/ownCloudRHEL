@@ -7,7 +7,7 @@ This article covers the installation of the server (not the client).
 ## What is ownCloud?
 ownCloud is a web suite that provides cloud storage over the network. Data will be stored on the server and can be downloaded or accessed anytime with a browser or desktop client or smartphone app.
 
-##ownCloud Server Installation
+## ownCloud Server Installation
 
 The server is the core software behind ownCloud. Supporting Linux (like) operating systems it takes care of all your files and data and controls the access.
 
@@ -15,7 +15,8 @@ ownCloud is based on PHP and an SQLite, MySQL, Oracle or PostgreSQL database, so
 
 ownCloud is released under an AGPLv3 license, so you can setup own cloud storage server without any additional cost. The commercial version of ownCloud is also available.
 
-### Step 1: Prerequisites
+
+## Step 1: Prerequisites
 
 First, you have to enable Redhat software collection repository on RHEL 7.
 
