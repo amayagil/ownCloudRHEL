@@ -310,7 +310,7 @@ Listen 192.168.2.198:8080
 I have opted for this, as this machine has different network interfaces, and I just want that one IP serves http requests on the 8080 port. If you want to use "all interfaces" or you only have one interface, you can just use:
 
 ~~~~
-Listen 192.168.2.198:80
+Listen 8080
 ~~~~
 
 Now, you have to point your browser to `http://192.168.2.198:8080/owncloud` instead, as follows:
